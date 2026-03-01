@@ -1,0 +1,9 @@
+The python in this package is annoying because of dependencies. We are currently using the native C++, and it was    
+clearly never tested by the author. We made significant changes to that it actually works. But C++ is not optimal    
+because it needs to rely on libcurl, etc. 
+
+We have a configuration-driven MCP server at ~/source/MCPFusion with a number of configurations in the "configs" directory. There is also a file at ~/source/MCPFusion/docs/config.md that describes how the configuration files work. I'd like to create a configuration file for that includes all of the functionality that the C++ version provides. If the username/password authentication to pwndoc, token passing, etc., is not currently supported by MCPFusion please provide your recommendations on what needs to be added.
+
+To summarize, create a .json configuration for MCPFusion that implements all of the MCP Tools currently in the C++ version of this software.
+
+
